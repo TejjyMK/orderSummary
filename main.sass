@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+$dark-blue: hsl(223, 47%, 23%)
+$bright-blue: hsl(245,75%,52%)
+$grey: hsl(224, 23%, 55%)
+
+html
+    box-sizing: border-box
+    font-size: 62.5% // -> (10px/16px) = 62.5% => 1rem = 10px
+
+body
+    font-family: 'Red Hat Display'
+    background-image: url(./images/pattern-background-desktop.svg)
+    background-color:#e1e8fd
+    background-repeat: no-repeat
+    background-size: 100% auto 
+    background-position: center top
+
+    @media only screen and (max-width: 600px)
+        background-image: url(./images/pattern-background-mobile.svg)
+        
+.card
+    background: #faf9f9
+    max-width: 48rem
+    margin: 10rem auto
+    border-radius: 20px
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+    display: flex
+    flex-direction: column
+
+    &__img
+        border-radius: 20px 20px 0px 0px
+
+    &__title
+        font:
+            size: 2.8rem
+            font-weight: 900
+        text-align: center
+        padding-top: 1rem
+        padding-bottom: 1.5rem
+        color: $dark-blue
+
+    &__text
+        text-align: center
+        color: $grey
+        margin-bottom: 1.6rem
+        font:
+            size: 2rem
+
+    &__plan
+        display: flex
+        background: hsl(225, 100%, 98%)
+        justify-content: space-between
+        padding: 2.3rem
+        border-radius: 1rem
+        margin-bottom: 3rem
+
+        &-container
+            margin-left: -9rem
+
+        &-text
+            font-size: 1.6rem
+            padding-bottom: 1rem
+            color: $dark-blue
+
+        &-price
+            font-size: 1.8rem
+            color: $grey
+
+        &-button
+            border: none
+            cursor: pointer
+            overflow: hidden
+            background-color: transparent
+            text-decoration: underline
+            color: $bright-blue
+            font:
+                size: 1.6rem
+                weight: bold
+
+            &:hover
+                color: #8367d1
+                text-decoration: none
+
+    &__button
+        padding: 1.5rem
+        display: block
+        width: 100%
+        border: none
+        margin-bottom: 1rem
+        cursor: pointer
+        font-size: 1.6rem
+        font-weight: 600
+        background-color: transparent
+        border-radius: 1rem
+
+        &-payment
+            background: $bright-blue
+            color: white
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+
+            &:hover
+                background: #563fbdea
+
+        &-cancel
+            color: $grey
+
+            &:hover
+                color: #484848
+
+.container
+    padding: 30px

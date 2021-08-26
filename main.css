@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Red Hat Display';
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-color: #e1e8fd;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+  }
+}
+
+.card {
+  background: #faf9f9;
+  max-width: 48rem;
+  margin: 10rem auto;
+  border-radius: 20px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__img {
+  border-radius: 20px 20px 0px 0px;
+}
+
+.card__title {
+  font-size: 2.8rem;
+  font-font-weight: 900;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  color: #1f2f56;
+}
+
+.card__text {
+  text-align: center;
+  color: #7280a7;
+  margin-bottom: 1.6rem;
+  font-size: 2rem;
+}
+
+.card__plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #f5f7ff;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.3rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card__plan-container {
+  margin-left: -9rem;
+}
+
+.card__plan-text {
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+  color: #1f2f56;
+}
+
+.card__plan-price {
+  font-size: 1.8rem;
+  color: #7280a7;
+}
+
+.card__plan-button {
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: transparent;
+  text-decoration: underline;
+  color: #3829e0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.card__plan-button:hover {
+  color: #8367d1;
+  text-decoration: none;
+}
+
+.card__button {
+  padding: 1.5rem;
+  display: block;
+  width: 100%;
+  border: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: transparent;
+  border-radius: 1rem;
+}
+
+.card__button-payment {
+  background: #3829e0;
+  color: white;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.card__button-payment:hover {
+  background: #563fbdea;
+}
+
+.card__button-cancel {
+  color: #7280a7;
+}
+
+.card__button-cancel:hover {
+  color: #484848;
+}
+
+.container {
+  padding: 30px;
+}
+/*# sourceMappingURL=main.css.map */
